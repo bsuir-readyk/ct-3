@@ -1,0 +1,18 @@
+-module(main).
+-export([main/0]).
+main() ->
+io:format("Hello World"),
+io:format("Second message"),
+if 3 ->
+    io:format("condition is true"),
+    io:format("more output")
+end,
+if 5 ->
+    io:format("simple branch")
+; true ->
+    io:format("else branch"),
+    if 1 ->
+        io:format("nested if"
+    end
+end,
+ok.
